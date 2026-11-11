@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+    color: #222222;
+}
+
+/* ENCABEZADO */
+
+.encabezado {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.encabezado h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+/* FILTROS */
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.filtros input,
+.filtros select {
+    padding: 10px;
+    border: 1px solid #999999;
+    border-radius: 0;
+    font-size: 15px;
+}
+
+/* EQUIPOS */
+
+.equipos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+}
+
+.card {
+    background-color: white;
+    width: 210px;
+    min-height: 210px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card .liga {
+    color: #8b2020;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+/* MENSAJES */
+
+#mensaje {
+    text-align: center;
+    padding: 10px;
+}
+
+/* FORMULARIO */
+
+.agregar {
+    width: 90%;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+}
+
+.agregar h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.agregar form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.agregar label {
+    font-weight: bold;
+}
+
+.agregar input {
+    padding: 10px;
+    border: 1px solid #999999;
+    border-radius: 0;
+}
+
+.agregar button {
+    padding: 10px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    .filtros {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}

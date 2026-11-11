@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligas de fútbol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Ligas de fútbol</h1>
+        <p>Explorá los equipos de las principales ligas del mundo</p>
+    </header>
+
+    <section class="filtros">
+        <input
+            type="search"
+            id="Buscar"
+            placeholder="Buscar un equipo..."
+        >
+
+        <select id="filtroliga">
+            <option value="">Todas las ligas</option>
+        </select>
+
+        <select id="filtropais">
+            <option value="">Todos los países</option>
+        </select>
+    </section>
+
+    <main>
+        <p id="mensaje">Cargando equipos...</p>
+        <section class="equipos-container" id="equiposContainer"></section>
+    </main>
+
+    <section class="agregar">
+        <h2>Agregar un equipo manualmente</h2>
+
+        <form id="agregarEquipo">
+
+            <label for="nombre">Nombre del equipo</label>
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Ej: Chacarita Juniors"
+                required
+            >
+
+            <label for="liga">Liga</label>
+            <input
+                type="text"
+                id="liga"
+                placeholder="Ej: Primera Nacional"
+                required
+            >
+
+            <label for="pais">País</label>
+            <input
+                type="text"
+                id="pais"
+                placeholder="Ej: Argentina"
+                required
+            >
+
+            <label for="escudo">URL del escudo (opcional)</label>
+            <input
+                type="url"
+                id="escudo"
+                placeholder="Pegá el enlace de una imagen"
+            >
+
+            <button type="submit">Agregar equipo</button>
+
+        </form>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
